@@ -46,6 +46,7 @@ def VPS(str):
 
 T=int(input())
 
-for _ in range(T):
+for _ in range(T): # 반복 변수의 값을 사용하지 않음
+    # 그냥 밑에 이것만 T번 반복되는 것
     s=input()
     print(VPS(s))

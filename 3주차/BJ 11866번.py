@@ -34,8 +34,8 @@ for i in range(1,N+1):
 
 # 빌때까지 que[k]값을 빼야지
 while que:
-    for _ in range(K-1):
-        que.append(que.popleft()) # K번째 전 사람들을 찾아서 맨 뒤로 넣고
+    for _ in range(K-1): # 이것도 반복 변수 사용안하고 K-1일때 가지
+        que.append(que.popleft()) # K번째 전 요소들을 찾아서 맨 뒤로 넣고
                                   # 그럼 K번째가 맨 앞에 오겠지
 
     answer_list.append(que.popleft()) # 그걸 answer_list에
