@@ -8,6 +8,8 @@
 # find_d() 이분탐색 수행 -> count_router을 반복 호출하면서 최적의 d를 찾음
 # counter_router은 현재 d값으로 공유기를 몇개 설치 할 수 있는지 계산
 # C값과 d값을 비교해가며 mid(확인할 거리)를 알맞게 조정해감
+
+# upperbound라는 방식이 있음 -> 잘 모름
 def find_d(N,C,postions):
     postions.sort()
     left,right=1, postions[-1]-postions[0] # 각각 최소거리(바로 옆집에 설치했다는 생각), 최대거리(첫집과 맨 마지막 집 사이의 거리)
